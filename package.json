@@ -1,0 +1,13 @@
+{
+  "name": "fraude-lab-servidor",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Hackathon de classificação com liberações controladas pela professora",
+  "engines": {
+    "node": ">=22.9"
+  },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env server.js",
+    "test": "node --test server.test.js"
+  }
+}

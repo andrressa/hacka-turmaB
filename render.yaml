@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: fraude-lab
+    runtime: node
+    plan: free
+    buildCommand: node --check server.js
+    startCommand: node server.js
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_VERSION
+        value: 24
+      - key: ADMIN_USER
+        value: professora
+      - key: ADMIN_PASSWORD
+        sync: false
+      - key: STATE_DIR
+        value: ./runtime

@@ -1,0 +1,16 @@
+coluna,significado,disponibilidade
+pedido_id,Identificador único do pedido; repetições indicam registros duplicados.,compra
+cliente_id,Identificador do cliente; pode aparecer em diferentes pedidos.,compra
+data_compra,"Data e horário da compra, sem fuso, no relógio da loja.",compra
+valor_compra,Valor em reais; pode vir numérico ou com formatação brasileira.,compra
+quantidade_itens,Número de itens no pedido.,compra
+categoria,Categoria comercial; grafias equivalentes precisam ser padronizadas.,compra
+dias_cadastro,Dias desde o cadastro; valores negativos são inválidos.,compra
+compras_anteriores,Compras concluídas antes do pedido.,compra
+tentativas_pagamento,Tentativas até a aprovação do pedido atual.,compra
+pedidos_ultima_hora,Outros pedidos do cliente na última hora.,compra
+dispositivos_7dias,Dispositivos distintos nos últimos sete dias.,compra
+endereco_alterado,1 se o endereço mudou recentemente; 0 caso contrário.,compra
+distancia_endereco_km,Distância em km até o endereço habitual.,compra
+contestacao_posterior,Contestação registrada após a compra.,após compra
+fraude,"Resultado auditado: 1 fraude, 0 legítima. Rótulo, não entrada.",após auditoria
